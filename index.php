@@ -39,3 +39,4 @@ if (is_file($absPath)) {
 
 header('Content-Type: application/json');
 echo json_encode(listDirectory($absPath));
+
