@@ -30,6 +30,11 @@ Send a GET request to the script with an optional `path` query:
 - GET /index.php
 - GET /index.php?path=subfolder
 
+## Requirements:
+
+    PHP 7.0 or higher
+
+    Web server (Apache, Nginx, etc.)
   
 **Sample Response:**
 ```json
@@ -44,8 +49,3 @@ Send a GET request to the script with an optional `path` query:
   }
 ]
 
- - Requirements:
-
-    PHP 7.0 or higher
-
-    Web server (Apache, Nginx, etc.)
