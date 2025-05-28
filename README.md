@@ -1,4 +1,4 @@
-# PHP-Directory-Lister-API-and-fileViewer 📁
+# PHP-Directory-Lister-API-for-file Viewing 📁
 
 A lightweight PHP script that:
 
@@ -44,4 +44,8 @@ Send a GET request to the script with an optional `path` query:
   }
 ]
 
+ - Requirements:
 
+    PHP 7.0 or higher
+
+    Web server (Apache, Nginx, etc.)
