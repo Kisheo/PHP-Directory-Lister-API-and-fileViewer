@@ -4,19 +4,19 @@ $baseDir = __DIR__; // Root directory is the current directory of the script
 function listDirectory($dir) {
     $result = [];
     $files = scandir($dir);
-    
+
     foreach ($files as $file) {
-        if ($file === '.' || $file === '..') {
+        if ($file === '.' || $file === '..' || $file === 'index.php') {
             continue;
         }
-        
+
         $path = "$dir/$file";
         $result[] = [
             'name' => $file,
             'isFile' => is_file($path)
         ];
     }
-    
+
     return $result;
 }
 
@@ -39,4 +39,3 @@ if (is_file($absPath)) {
 
 header('Content-Type: application/json');
 echo json_encode(listDirectory($absPath));
-
